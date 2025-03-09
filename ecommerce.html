@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEasy - Your One Stop Shop</title>
+    <link rel="stylesheet" href="ecommerce.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="#" class="logo">ShopEasy</a>
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            id="searchInput"
+            placeholder="Search products..."
+          />
+          <button class="search-btn" id="searchBtn">Search</button>
+        </div>
+        <div class="cart-container">
+          <div class="cart-icon">🛒</div>
+          <div class="cart-count" id="cartCount">0</div>
+          <div class="cart-dropdown" id="cartDropdown">
+            <div class="cart-dropdown-header">Shopping Cart</div>
+            <div class="cart-items" id="cartItems">
+              <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-total" id="cartTotal">
+              <span>Total:</span>
+              <span>$0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="category-filters">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="electronics">
+          Electronics
+        </button>
+        <button class="category-btn" data-category="clothing">Clothing</button>
+        <button class="category-btn" data-category="home">
+          Home & Kitchen
+        </button>
+        <button class="category-btn" data-category="beauty">Beauty</button>
+      </div>
+
+      <div class="products-container" id="productsContainer">
+        <!-- Products will be loaded here -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="product_details.js"></script>
+    <script src="ecommerce.js"></script>
+  </body>
+</html>
